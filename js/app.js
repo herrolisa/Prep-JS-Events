@@ -16,19 +16,22 @@
     document.getElementById("answer").innerHTML = " C (da sea get it?) arrrr!";
   }
 
-//   /*4.  Create a button that will display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
+  /*4.  Create a button that will display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
+  function kungfu(){
+    document.getElementById("beWater").innerHTML = "My name is Lee, Brrruuuce Lee!";
+  }
 
  
-// //Event Listeners
-// //Please write your code inside the window.onload function for exerices 5 onward...
+//Event Listeners
+//Please write your code inside the window.onload function for exerices 5 onward...
 
-// window.onload = function (){
+window.onload = function (){
 
-// document.getElementById(/**/).addEventListener('click', /**/);
+document.getElementById("Benjamin").addEventListener('click', sayQuote);
 
-// function sayQuote(){
-//   document.getElementById(/**/).innerHTML = "Our lives are defined by opportunities; even the ones we miss.";
-// }
+function sayQuote(){
+  document.getElementById("lines").innerHTML = "Our lives are defined by opportunities; even the ones we miss.";
+}
 
 
 // //6.  Generate a random quote from clicking on a button
@@ -44,8 +47,4 @@
 // /*7. Create your own event listener*/
 
 
-// };
-
-
-
-
+};
