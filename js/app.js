@@ -8,7 +8,7 @@
 
  /* 2. change the font color to red*/
   function colorMeBadd(){
-    
+    document.getElementById("exercise2").style.color = "red";
   }
 
 // /*3. fill in the spaces to make this function operate:*/
