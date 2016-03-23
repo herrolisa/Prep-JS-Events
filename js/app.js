@@ -11,10 +11,10 @@
     document.getElementById("exercise2").style.color = "red";
   }
 
-// /*3. fill in the spaces to make this function operate:*/
-//   function showAnswer(){
-//     document.getElementById(/**/)./**/ = " C (da sea get it?) arrrr!";
-//   }
+/*3. fill in the spaces to make this function operate:*/
+  function showAnswer(){
+    document.getElementById("answer").innerHTML = " C (da sea get it?) arrrr!";
+  }
 
 //   /*4.  Create a button that will display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
 
