@@ -34,17 +34,27 @@ function sayQuote(){
 }
 
 
-// //6.  Generate a random quote from clicking on a button
-// var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance."];
+//6.  Generate a random quote from clicking on a button
+var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance."];
 
-// document.getElementById(/**/).addEventListener(/**/, sayQuotes);
+document.getElementById("change").addEventListener("click", sayQuotes);
                                                    
-// function sayQuotes(){
-//   var getQuotes = quotes[Math.floor(Math.random()*quotes.length)];
-//   document.getElementById(/**/).innerHTML = /**/;
-// }
+function sayQuotes(){
+  var getQuotes = quotes[Math.floor(Math.random()*quotes.length)];
+  document.getElementById("displayQuotes").innerHTML = getQuotes;
+}
 
-// /*7. Create your own event listener*/
+/*7. Create your own event listener*/
+var content = document.getElementById("backwards").innerHTML;
+var newStr = "";
 
+document.getElementById("backwards").addEventListener("click",reverseString);
+
+function reverseString () {
+  for (var i = content.length - 1; i >= 0; i--) {
+    newStr +=content[i];
+  }
+  document.getElementById("reverse").innerHTML = newStr;
+}
 
 };
